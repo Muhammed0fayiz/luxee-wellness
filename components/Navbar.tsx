@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site-config";
@@ -17,16 +18,18 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#efd8cd] backdrop-blur">
       {/* Main Navbar */}
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-1">
-
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center leading-none"
           onClick={() => setOpen(false)}
         >
-          <img
+          <Image
             src="/images/logo2.png"
             alt="Luxee Wellness & Family Salon"
+            width={160}
+            height={80}
+            priority
             className="h-auto w-40 object-contain"
           />
         </Link>

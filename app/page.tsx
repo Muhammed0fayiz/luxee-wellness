@@ -38,12 +38,11 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-7xl px-6 pt-8 md:px-12 md:pt-10 lg:px-16 lg:pt-12">
             <div className="max-w-lg text-cream">
             
-
-              <h1 className="font-display text-4xl leading-[1.05] transition-all duration-500 hover:tracking-wide md:text-5xl lg:text-6xl">
-                The Beauty
-                <br />
-                You Deserve
-              </h1>
+<h1 className="font-display text-4xl leading-[1.05] text-cream transition-all duration-500 hover:text-gold hover:tracking-wide md:text-5xl lg:text-6xl">
+  The Beauty
+  <br />
+  You Deserve
+</h1>
 
               {/* Decorative Line */}
               <div className="my-5 flex items-center gap-3">
