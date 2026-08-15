@@ -16,10 +16,9 @@ export const siteConfig = {
     postalCode: "695607",
     country: "IN",
   },
-  hours: [
-    { day: "Monday – Saturday", time: "9:00 AM – 8:00 PM" },
-    { day: "Sunday", time: "9:00 AM – 6:00 PM" },
-  ],
+hours: [
+  { day: "Monday – Sunday", time: "9:30 AM – 9:30 PM" },
+],
   social: {
     instagram: "https://www.instagram.com/luxeewellness",
   },
