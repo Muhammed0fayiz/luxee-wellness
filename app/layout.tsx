@@ -25,16 +25,16 @@ const worksans = Work_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.fullName} | Salon in Venjarammoodu, Nellanad`,
+    default: `${siteConfig.fullName} | Salon in Venjaramoodu, Nellanad`,
     template: `%s | ${siteConfig.fullName}`,
   },
   description: siteConfig.description,
   keywords: [
-    "salon in Venjarammoodu",
+    "salon in Venjaramoodu",
     "salon near Nellanad",
     "family salon Kerala",
-    "hair smoothening Venjarammoodu",
-    "hydra facial Nellanad",
+    "hair smoothening Venjaramoodu",
+    "hydra facial Venjaramoodu",
     "gents and ladies salon",
     "Luxee Wellness",
   ],

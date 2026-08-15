@@ -5,7 +5,7 @@ import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Get to know ${siteConfig.fullName}, a gents and ladies salon in Venjarammoodu, Nellanad offering hair, skin and wellness services for the whole family.`,
+  description: `Get to know ${siteConfig.fullName}, a gents and ladies salon in Venjaramoodu offering hair, skin and wellness services for the whole family.`,
 };
 
 const rows = [
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <span className="italic text-berry">grew up.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl font-body text-base leading-relaxed text-ink/70">
-            Luxee Wellness Family Salon started as a simple idea: Venjarammoodu
+            Luxee Wellness Family Salon started as a simple idea: Venjaramoodu
             didn&apos;t need another salon that only did half the job. So we
             built one place, near Alanthara Bus Stop, where a father can get a
             beard trim while his daughter is in for a hydra facial, and both

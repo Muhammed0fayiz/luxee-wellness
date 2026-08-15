@@ -62,10 +62,10 @@ export default function ServiceMenu() {
 
                   {/* Highlighted Book Button */}
                   <Link
-                    href="/contact"
-                    className="shrink-0 rounded-full bg-berry px-4 py-1.5 text-xs font-semibold uppercase tracking-wideish text-cream transition-all duration-200 hover:scale-105 hover:bg-ink"
+                    href="https://luxee-wellness.respark.in/"
+                    className="shrink-0 rounded-full bg-berry px-4 py-1.5 text-xs font-semibold  tracking-wideish text-cream transition-all duration-200 hover:scale-105 hover:bg-ink"
                   >
-                    Book
+                   View more
                   </Link>
                 </li>
               ))}

@@ -15,7 +15,7 @@ export default function Footer() {
 
           <p className="mt-3 max-w-xs font-body text-sm leading-relaxed text-cream/60">
             {siteConfig.tagline}, on the first floor near Alanthara Bus Stop in
-            Venjarammoodu.
+            Venjaramoodu.
           </p>
         </div>
 

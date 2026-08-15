@@ -6,7 +6,7 @@ import { fullAddress, siteConfig } from "@/lib/site-config";
 import { photos } from "@/lib/photos";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.fullName} | Salon in Venjarammoodu, Nellanad`,
+  title: `${siteConfig.fullName} | Salon in Venjaramoodu`,
   description: siteConfig.description,
 };
 
@@ -149,64 +149,63 @@ export default function HomePage() {
         </p>
 
         {/* Hero Buttons */}
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="
-              inline-flex
-              items-center
-              justify-center
-              gap-2
-              rounded-full
-              bg-berry
-              px-7
-              py-3
-              font-body
-              text-xs
-              font-semibold
-              text-cream
-              shadow-sm
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:bg-berry-deep
-              hover:shadow-xl
-            "
-          >
-            <span className="text-base">
-              ▣
-            </span>
+  <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+  <a
+    href="https://luxee-wellness.respark.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      inline-flex
+      items-center
+      justify-center
+      gap-2
+      rounded-full
+      bg-berry
+      px-7
+      py-3
+      font-body
+      text-xs
+      font-semibold
+      text-cream
+      shadow-sm
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:bg-berry-deep
+      hover:shadow-xl
+    "
+  >
+    <span className="text-base">▣</span>
+    More Details
+  </a>
 
-            More Details
-          </a>
-
-          <Link
-            href="/services"
-            className="
-              inline-flex
-              items-center
-              justify-center
-              rounded-full
-              border
-              border-cream/70
-              px-7
-              py-3
-              font-body
-              text-xs
-              font-semibold
-              text-cream
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:border-gold-light
-              hover:bg-white/10
-              hover:text-gold-light
-              hover:shadow-lg
-            "
-          >
-            View Services
-          </Link>
-        </div>
+  <Link
+    href="/services"
+    className="
+      inline-flex
+      items-center
+      justify-center
+      rounded-full
+      border
+      border-cream/70
+      px-7
+      py-3
+      font-body
+      text-xs
+      font-semibold
+      text-cream
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:border-gold-light
+      hover:bg-white/10
+      hover:text-gold-light
+      hover:shadow-lg
+    "
+  >
+    View Services
+  </Link>
+</div>
 
       </div>
     </div>
@@ -218,7 +217,7 @@ export default function HomePage() {
         {/* Text */}
         <div className="flex flex-col justify-center px-6 py-16 md:px-14 md:py-24">
           <p className="mb-5 font-body text-xs font-semibold uppercase tracking-wideish text-gold transition-all duration-300 hover:tracking-[0.2em]">
-            Venjarammoodu &middot; Nellanad &middot; Kerala
+            Venjaramoodu &middot;  &middot; Kerala
           </p>
 
           <h2 className="font-display text-5xl leading-[1.1] text-ink transition-all duration-500 hover:tracking-wide md:text-6xl">
