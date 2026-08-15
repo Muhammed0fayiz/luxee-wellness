@@ -64,12 +64,12 @@ export default function ServicesPage() {
             we&apos;ll suggest the right service — no pressure to book
             anything extra.
           </p>
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="mt-6 inline-block border border-cream/40 px-8 py-3 font-body text-sm font-semibold transition-colors hover:border-gold-light hover:text-gold-light"
-          >
-            Call {siteConfig.phoneDisplay}
-          </a>
+      <a
+  href={`tel:${siteConfig.phone}`}
+  className="mt-6 inline-block rounded-full border border-cream/40 px-8 py-3 font-body text-sm font-semibold transition-colors hover:border-gold-light hover:text-gold-light"
+>
+  Call {siteConfig.phoneDisplay}
+</a>
         </div>
       </section>
     </>

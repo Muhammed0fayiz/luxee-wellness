@@ -62,6 +62,7 @@ export default function Navbar() {
             hover:bg-berry
             hover:text-white
             md:inline-block
+            rounded-full
           "
         >
           {siteConfig.phoneDisplay}
@@ -129,6 +130,7 @@ export default function Navbar() {
                 hover:border-berry
                 hover:bg-berry
                 hover:text-white
+                rounded-full
               "
             >
               {siteConfig.phoneDisplay}

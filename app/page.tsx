@@ -20,69 +20,198 @@ export default function HomePage() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative h-[520px] w-full overflow-hidden md:h-[750px]">
-        <Image
-          src="/images/hero.jpg"
-          alt="Luxee Wellness Salon"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover transition-transform duration-1000 hover:scale-105"
-        />
+{/* ================= HERO ================= */}
+<section
+  className="
+    relative
+    h-[520px]
+    w-full
+    overflow-hidden
+    sm:h-[600px]
+    md:h-[680px]
+    lg:h-[720px]
+    xl:h-[750px]
+  "
+>
+  <Image
+    src="/images/hero.jpg"
+    alt="Luxee Wellness Salon"
+    fill
+    priority
+    sizes="100vw"
+    className="
+      object-cover
+      object-[center_38%]
+      transition-transform
+      duration-1000
+      hover:scale-105
+      sm:object-[center_38%]
+      md:object-[center_40%]
+      lg:object-[center_42%]
+    "
+  />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/35 transition-colors duration-500 hover:bg-black/30" />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/35 transition-colors duration-500 hover:bg-black/30" />
 
-        {/* Hero Content */}
-        <div className="absolute inset-0 flex items-start">
-          <div className="mx-auto w-full max-w-7xl px-6 pt-8 md:px-12 md:pt-10 lg:px-16 lg:pt-12">
-            <div className="max-w-lg text-cream">
-            
-<h1 className="font-display text-4xl leading-[1.05] text-cream transition-all duration-500 hover:text-gold hover:tracking-wide md:text-5xl lg:text-6xl">
-  The Beauty
-  <br />
-  You Deserve
-</h1>
+  {/* Hero Content */}
+  <div className="absolute inset-0 flex items-start">
+    <div
+      className="
+        mx-auto
+        w-full
+        max-w-7xl
+        px-6
+        pt-8
+        sm:px-8
+        md:px-12
+        md:pt-10
+        lg:px-16
+        lg:pt-12
+      "
+    >
+      <div className="max-w-lg text-cream">
 
-              {/* Decorative Line */}
-              <div className="my-5 flex items-center gap-3">
-                <span className="h-px w-16 bg-gold-light transition-all duration-500 hover:w-24 md:w-24" />
-                <span className="text-sm text-gold-light transition-transform duration-500 hover:rotate-180">
-                  ✦
-                </span>
-                <span className="h-px w-16 bg-gold-light transition-all duration-500 hover:w-24 md:w-24" />
-              </div>
+        <h1
+          className="
+            font-display
+            text-4xl
+            leading-[1.05]
+            text-cream
+            transition-all
+            duration-500
+            hover:text-gold
+            hover:tracking-wide
+            sm:text-5xl
+            md:text-5xl
+            lg:text-6xl
+          "
+        >
+          The Beauty
+          <br />
+          You Deserve
+        </h1>
 
-              <p className="max-w-md font-body text-xs leading-6 text-cream/90 md:text-sm md:leading-7">
-                At {siteConfig.fullName}, we believe beauty is more than just
-                a look — it&apos;s a feeling. Our expert team is dedicated to
-                bringing out your best with personalized care, premium
-                services, and a relaxing experience.
-              </p>
+        {/* Decorative Line */}
+        <div className="my-5 flex items-center gap-3">
+          <span
+            className="
+              h-px
+              w-16
+              bg-gold-light
+              transition-all
+              duration-500
+              hover:w-24
+              md:w-24
+            "
+          />
 
-              {/* Hero Buttons */}
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={`tel:${siteConfig.phone}`}
-                  className="inline-flex items-center justify-center gap-2 bg-berry px-7 py-3 font-body text-xs font-semibold text-cream shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-berry-deep hover:shadow-xl"
-                >
-                  <span className="text-base transition-transform duration-300 group-hover:rotate-12">
-                    ▣
-                  </span>
-                  Book Now
-                </a>
+          <span
+            className="
+              text-sm
+              text-gold-light
+              transition-transform
+              duration-500
+              hover:rotate-180
+            "
+          >
+            ✦
+          </span>
 
-                <Link
-                  href="/services"
-                  className="inline-flex items-center justify-center border border-cream/70 px-7 py-3 font-body text-xs font-semibold text-cream transition-all duration-300 hover:-translate-y-1 hover:border-gold-light hover:bg-white/10 hover:text-gold-light hover:shadow-lg"
-                >
-                  View Services
-                </Link>
-              </div>
-            </div>
-          </div>
+          <span
+            className="
+              h-px
+              w-16
+              bg-gold-light
+              transition-all
+              duration-500
+              hover:w-24
+              md:w-24
+            "
+          />
         </div>
-      </section>
+
+        <p
+          className="
+            max-w-md
+            font-body
+            text-xs
+            leading-6
+            text-cream/90
+            sm:text-sm
+            sm:leading-7
+          "
+        >
+          At {siteConfig.fullName}, we believe beauty is more than just
+          a look — it&apos;s a feeling. Our expert team is dedicated to
+          bringing out your best with personalized care, premium
+          services, and a relaxing experience.
+        </p>
+
+        {/* Hero Buttons */}
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={`tel:${siteConfig.phone}`}
+            className="
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              rounded-full
+              bg-berry
+              px-7
+              py-3
+              font-body
+              text-xs
+              font-semibold
+              text-cream
+              shadow-sm
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              hover:bg-berry-deep
+              hover:shadow-xl
+            "
+          >
+            <span className="text-base">
+              ▣
+            </span>
+
+            More Details
+          </a>
+
+          <Link
+            href="/services"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-cream/70
+              px-7
+              py-3
+              font-body
+              text-xs
+              font-semibold
+              text-cream
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              hover:border-gold-light
+              hover:bg-white/10
+              hover:text-gold-light
+              hover:shadow-lg
+            "
+          >
+            View Services
+          </Link>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ================= INTRO SECTION ================= */}
       <section className="grid gap-0 md:grid-cols-2">
@@ -100,7 +229,7 @@ export default function HomePage() {
             </span>
           </h2>
 
-          <p className="mt-6 max-w-md font-body text-base leading-relaxed text-ink/70">
+          <p className="mt-6 max-w-md font-body text-lg leading-relaxed text-ink/70">
             From a simple haircut to a complete beauty transformation —
             {siteConfig.fullName} brings quality hair and beauty care for
             gents, ladies and families, just a short walk from Alanthara Bus
@@ -108,21 +237,21 @@ export default function HomePage() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={`tel:${siteConfig.phone}`}
-              className="bg-berry px-8 py-3 text-center font-body text-sm font-semibold text-cream transition-all duration-300 hover:-translate-y-1 hover:bg-berry-deep hover:shadow-xl"
-            >
-              Book Now
-            </a>
+      <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+  <a
+    href={`tel:${siteConfig.phone}`}
+    className="rounded-full bg-berry px-8 py-3 text-center font-body text-sm font-semibold text-cream transition-all duration-300 hover:-translate-y-1 hover:bg-berry-deep hover:shadow-xl"
+  >
+    More Details
+  </a>
 
-            <Link
-              href="/services"
-              className="border border-ink px-8 py-3 text-center font-body text-sm font-semibold text-ink transition-all duration-300 hover:-translate-y-1 hover:border-berry hover:bg-berry hover:text-cream hover:shadow-lg"
-            >
-              View the full menu
-            </Link>
-          </div>
+  <Link
+    href="/services"
+    className="rounded-full border border-ink px-8 py-3 text-center font-body text-sm font-semibold text-ink transition-all duration-300 hover:-translate-y-1 hover:border-berry hover:bg-berry hover:text-cream hover:shadow-lg"
+  >
+    View the full menu
+  </Link>
+</div>
 
           {/* Highlights */}
           <ul className="mt-14 flex flex-col gap-3 font-body text-sm text-ink/70">
@@ -241,17 +370,17 @@ export default function HomePage() {
           </p>
 
           {/* Address */}
-          <h2 className="font-display text-3xl italic transition-all duration-500 hover:text-gold-light md:text-4xl">
+          <h2 className=" text-3xl italic transition-all duration-500 hover:text-gold-light md:text-4xl">
             {fullAddress}
           </h2>
 
           {/* Call Button */}
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="border border-cream/40 px-8 py-3 font-body text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:border-gold-light hover:bg-gold-light/10 hover:text-gold-light hover:shadow-xl"
-          >
-            Call {siteConfig.phoneDisplay}
-          </a>
+       <a
+  href={`tel:${siteConfig.phone}`}
+  className="rounded-full border border-cream/40 px-8 py-3 font-body text-sm font-semibold transition-all duration-300 hover:-translate-y-1 hover:border-gold-light hover:bg-gold-light/10 hover:text-gold-light hover:shadow-xl"
+>
+  Call {siteConfig.phoneDisplay}
+</a>
         </div>
       </section>
     </>

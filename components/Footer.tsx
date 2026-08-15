@@ -2,6 +2,9 @@ import Link from "next/link";
 import { fullAddress, siteConfig } from "@/lib/site-config";
 
 export default function Footer() {
+  const mapUrl =
+    "https://www.google.com/maps/place/Luxee+Wellness+Family+Salon/@8.6899782,76.9036038,520m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3b05c10009bc258f:0x348b2664350eb97e!8m2!3d8.6899782!4d76.9061787!16s%2Fg%2F11w93z7pf_?entry=ttu";
+
   return (
     <footer className="bg-wine text-cream">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
@@ -21,9 +24,35 @@ export default function Footer() {
 
           <p className="leading-relaxed">{fullAddress}</p>
 
+          {/* Google Maps Location */}
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-gold-light transition-colors hover:text-cream"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+
+            <span>View on Google Maps</span>
+          </a>
+
           <a
             href={`tel:${siteConfig.phone}`}
-            className="mt-3 inline-block hover:text-gold-light"
+            className="mt-3 block hover:text-gold-light"
           >
             {siteConfig.phoneDisplay}
           </a>
