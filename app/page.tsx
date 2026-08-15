@@ -237,12 +237,14 @@ export default function HomePage() {
 
           {/* Buttons */}
       <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-  <a
-    href={`tel:${siteConfig.phone}`}
-    className="rounded-full bg-berry px-8 py-3 text-center font-body text-sm font-semibold text-cream transition-all duration-300 hover:-translate-y-1 hover:bg-berry-deep hover:shadow-xl"
-  >
-    More Details
-  </a>
+<a
+  href="https://luxee-wellness.respark.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full bg-berry px-8 py-3 text-center font-body text-sm font-semibold text-cream transition-all duration-300 hover:-translate-y-1 hover:bg-berry-deep hover:shadow-xl"
+>
+  More Details
+</a>
 
   <Link
     href="/services"
