@@ -50,12 +50,19 @@ export default function Footer() {
             <span>View on Google Maps</span>
           </a>
 
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="mt-3 block hover:text-gold-light"
-          >
-            {siteConfig.phoneDisplay}
-          </a>
+        <a
+  href={`tel:${siteConfig.phone}`}
+  className="mt-3 block hover:text-gold-light"
+>
+  {siteConfig.phoneDisplay}
+</a>
+
+<a
+  href="mailto:info@luxeewellness.in"
+  className="mt-2 block hover:text-gold-light"
+>
+  info@luxeewellness.in
+</a>
         </div>
 
         <div className="font-body text-sm text-cream/60">
